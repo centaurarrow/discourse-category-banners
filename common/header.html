@@ -17,6 +17,8 @@
           const isException = category &&
           settings.exceptions.split("|").includes(category.name);
 
+          console.log(category);
+
           if(/^\/c\//.test(path)) {
               const hideMobile = (!settings.show_mobile && this.site.mobileView) ? "true" : hideMobile;
               const subCat = (!settings.show_subcategory && category.parentCategory) ? "true" : subCat;
